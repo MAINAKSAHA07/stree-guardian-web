@@ -1,8 +1,9 @@
 
 import React, { useEffect, useRef } from 'react';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, AlertCircle } from 'lucide-react';
 import CustomButton from '../ui/CustomButton';
 import { cn } from '@/lib/utils';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -46,8 +47,8 @@ const Hero = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-20 z-10">
         <div className="hero-content flex flex-col items-center text-center transition-all duration-200 ease-out">
           <div className="mb-6 inline-flex items-center rounded-full border border-slate-200 bg-white px-3 py-1 text-sm">
-            <span className="mr-1 rounded-full bg-stree-500 px-1.5 py-0.5 text-xs font-medium text-white">New</span>
-            <span className="text-xs font-medium text-slate-700">Introducing Stree - Now available for pre-order</span>
+            <span className="mr-1 rounded-full bg-stree-500 px-1.5 py-0.5 text-xs font-medium text-white">Concept</span>
+            <span className="text-xs font-medium text-slate-700">Seeking $1.5M in seed funding</span>
           </div>
           
           <h1 className="mb-6 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-slate-900 animate-fade-in">
@@ -55,18 +56,31 @@ const Hero = () => {
             <span className="block text-stree-600">Your Guardian in Emergencies</span>
           </h1>
           
-          <p className="mb-12 max-w-3xl text-lg md:text-xl text-slate-700 animate-fade-in" style={{ animationDelay: '0.1s' }}>
-            A revolutionary smart wearable designed to empower women with real-time safety solutions. 
-            Combining cutting-edge technology with an elegant design for everyday protection.
+          <p className="mb-8 max-w-3xl text-lg md:text-xl text-slate-700 animate-fade-in" style={{ animationDelay: '0.1s' }}>
+            A revolutionary smart wearable concept designed to empower women with real-time safety solutions. 
+            Featuring a non-lethal 1000V electric deterrent, multi-level alert system, and physiological monitoring in an elegant design.
           </p>
           
+          <div className="bg-slate-50 border border-slate-200 rounded-lg p-4 mb-8 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '0.15s' }}>
+            <div className="flex items-start">
+              <AlertCircle className="w-5 h-5 text-stree-600 mr-2 flex-shrink-0 mt-1" />
+              <p className="text-sm text-slate-700">
+                <strong>Investor Notice:</strong> Stree is currently in development phase. This website presents our vision and technical specifications to potential investors. The 1000V electric shock mechanism is designed to be non-lethal while providing effective protection, similar to civilian stun gun technology but with advanced safety features.
+              </p>
+            </div>
+          </div>
+          
           <div className="flex flex-col sm:flex-row gap-4 mb-16 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            <CustomButton size="lg">
-              Pre-order Now
-            </CustomButton>
-            <CustomButton size="lg" variant="outline">
-              Learn More
-            </CustomButton>
+            <Link to="/contact">
+              <CustomButton size="lg">
+                Contact for Investment
+              </CustomButton>
+            </Link>
+            <Link to="/features">
+              <CustomButton size="lg" variant="outline">
+                Explore Features
+              </CustomButton>
+            </Link>
           </div>
           
           <div className="relative w-full max-w-5xl mx-auto animate-fade-in" style={{ animationDelay: '0.3s' }}>
@@ -74,7 +88,7 @@ const Hero = () => {
               <div className="h-full w-full bg-gradient-to-br from-stree-100 via-white to-rose-50 flex items-center justify-center">
                 <img 
                   src="https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?auto=format&fit=crop&w=1400&q=80" 
-                  alt="Stree Wearable Device" 
+                  alt="Stree Wearable Device Concept" 
                   className="w-full h-full object-cover object-center"
                 />
               </div>

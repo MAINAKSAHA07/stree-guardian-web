@@ -1,33 +1,48 @@
 
 import React from 'react';
-import { Cpu, Smartphone, ShieldCheck, PenTool, Layers } from 'lucide-react';
+import { Cpu, Smartphone, ShieldCheck, PenTool, Layers, Battery, Server, Power } from 'lucide-react';
 import CustomButton from '../ui/CustomButton';
 
 const technologies = [
   {
     icon: Cpu,
-    title: 'Advanced Hardware',
-    description: 'Ultra-compact circuit design with high-efficiency sensors and low power consumption components.'
+    title: 'Advanced Microcontroller',
+    description: 'High-efficiency central processing unit that manages all device operations, sensor inputs, and triggers with millisecond response time and low power consumption.'
+  },
+  {
+    icon: Power,
+    title: 'Electric Shock Mechanism',
+    description: 'Carefully engineered 1000V shock delivery system with strategically placed electrodes. Includes comprehensive insulation to protect the wearer while effectively deterring attackers.'
   },
   {
     icon: Smartphone,
     title: 'Mobile Integration',
-    description: 'Seamless companion app that provides control, settings customization, and real-time monitoring.'
+    description: 'Companion app for configuration of emergency contacts, real-time tracking, status monitoring, and alert notifications. Features intuitive UI for quick access to safety settings.'
   },
   {
     icon: ShieldCheck,
     title: 'Security Features',
-    description: 'End-to-end encryption of all data with secure communication channels for emergency alerts.'
+    description: 'End-to-end encryption of all data with secure communication channels for emergency alerts. Dual-authentication system prevents accidental activation of safety mechanisms.'
+  },
+  {
+    icon: Battery,
+    title: 'Power System',
+    description: 'High-capacity rechargeable lithium-ion battery providing 48 hours of continuous operation per charge. Includes low-battery alerts and power-saving mode for extended use.'
+  },
+  {
+    icon: Server,
+    title: 'Communication Infrastructure',
+    description: 'Integrated GPS and Bluetooth modules with emergency frequency band capabilities for reliable connectivity even in areas with limited cellular coverage.'
   },
   {
     icon: PenTool,
     title: 'Elegant Design',
-    description: 'Sleek, lightweight and discreet design that can be worn comfortably throughout the day.'
+    description: 'Sleek, lightweight wristband design that can be worn comfortably throughout the day without drawing attention to its safety features. Available in multiple colors and styles.'
   },
   {
     icon: Layers,
     title: 'Durable Materials',
-    description: 'Water-resistant, shock-proof casing made from sustainable materials for long-lasting protection.'
+    description: 'Water-resistant, shockproof aluminum alloy and reinforced plastic casing for long-lasting protection. Designed to withstand daily use and harsh conditions while maintaining functionality.'
   }
 ];
 
@@ -61,9 +76,16 @@ const Technology = () => {
               <h2 className="section-title">
                 <span className="text-stree-600">Innovative</span> Technology
               </h2>
-              <p className="section-subtitle">
-                We've combined cutting-edge hardware with intuitive software to create a revolutionary safety device that's both powerful and easy to use.
+              <p className="section-subtitle mb-8">
+                We're combining cutting-edge hardware with intuitive software to create a revolutionary safety device concept. The Stree wearable is currently in development, leveraging state-of-the-art technology to provide unparalleled protection.
               </p>
+              
+              <div className="bg-stree-50 border border-stree-200 rounded-lg p-4 mb-8">
+                <h3 className="text-stree-800 text-lg font-semibold mb-2">Electric Shock Technology</h3>
+                <p className="text-stree-700 text-sm">
+                  Our proprietary electric shock system delivers a precisely controlled 1000V current – strong enough to temporarily immobilize an attacker without causing permanent harm. Unlike tasers, our specialized electrodes are designed for optimal contact through clothing while integrated safety features prevent accidental discharge.
+                </p>
+              </div>
               
               <div className="space-y-6 mb-8">
                 {technologies.map((tech, index) => (
