@@ -42,7 +42,7 @@ const processes = [
       'Establishment of dedicated support system for user assistance',
       'Implementation of continuous improvement based on real-world usage data',
       'Feature expansion through over-the-air updates and software enhancements',
-      'Development of partnerships with women's safety organizations and emergency services',
+      'Development of partnerships with women\'s safety organizations and emergency services',
       'Scaling production for wider market availability based on successful testing'
     ]
   }
