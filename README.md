@@ -1,69 +1,55 @@
-# Welcome to your Lovable project
+# Stree Guardian Web
 
-## Project info
+Stree Guardian Web is a web-based application designed to enhance women's safety by providing real-time assistance, emergency alerts, and location tracking. This repository contains the source code for the web application.
 
-**URL**: https://lovable.dev/projects/0eb39578-087a-4ef6-9132-f65ab2891125
+## Features
+- **Emergency SOS**: Quickly send distress signals to predefined contacts.
+- **Live Location Sharing**: Share real-time location with trusted contacts.
+- **Incident Reporting**: Report incidents of harassment or safety concerns.
+- **Safety Tips**: Access safety tips and resources for various situations.
 
-## How can I edit this code?
+## Installation
 
-There are several ways of editing your application.
+To set up and run the project locally, follow these steps:
 
-**Use Lovable**
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/MAINAKSAHA07/stree-guardian-web.git
+   cd stree-guardian-web
+   ```
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/0eb39578-087a-4ef6-9132-f65ab2891125) and start prompting.
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
 
-Changes made via Lovable will be committed automatically to this repo.
+3. Start the development server:
+   ```sh
+   npm run dev
+   ```
 
-**Use your preferred IDE**
+4. Open your browser and navigate to `http://localhost:3000/`.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Technologies Used
+- React.js
+- Node.js (Backend)
+- Firebase (Authentication and Database)
+- Google Maps API (Location Services)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Contribution
+Contributions are welcome! To contribute:
+1. Fork the repository.
+2. Create a new branch (`feature-branch`).
+3. Commit your changes.
+4. Push to your branch and create a pull request.
 
-Follow these steps:
+## License
+This project is licensed under the MIT License.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Contact
+For any inquiries, feel free to reach out to the repository owner on GitHub.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+Feel free to modify this README as per your project's requirements!
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/0eb39578-087a-4ef6-9132-f65ab2891125) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
