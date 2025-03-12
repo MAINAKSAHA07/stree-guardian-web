@@ -59,22 +59,22 @@ const currentPhase = {
 const milestones = [
   {
     icon: Book,
-    title: 'Phase 1: Q3-Q4 2023',
+    title: 'Phase 1: Q1-Q2 2025',
     description: 'Concept development and market research completed'
   },
   {
     icon: Wrench,
-    title: 'Phase 2: Q1-Q2 2024',
+    title: 'Phase 2: Q3-Q4 2025',
     description: 'Prototyping and initial safety testing (pending funding)'
   },
   {
     icon: Users,
-    title: 'Phase 3: Q3-Q4 2024',
+    title: 'Phase 3: Q1-Q2 2026',
     description: 'Field testing with focus groups and refinement'
   },
   {
     icon: Database,
-    title: 'Phase 4: Q1-Q2 2025',
+    title: 'Phase 4: Q3-Q4 2026',
     description: 'Limited production run and market entry'
   }
 ];

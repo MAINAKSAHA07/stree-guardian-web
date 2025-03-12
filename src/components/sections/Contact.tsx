@@ -90,7 +90,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-medium mb-1">Email Us</h3>
-                  <p className="text-muted-foreground">investors@streedevice.com</p>
+                  <p className="text-muted-foreground">msaha4@asu.edu</p>
                 </div>
               </div>
               
@@ -100,7 +100,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-medium mb-1">Call Us</h3>
-                  <p className="text-muted-foreground">+91 98765 43210</p>
+                  <p className="text-muted-foreground">+1 6234148522</p>
                 </div>
               </div>
               
@@ -110,10 +110,10 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-medium mb-1">Visit Our Office</h3>
-                  <p className="text-muted-foreground">
+                  {/* <p className="text-muted-foreground">
                     Tech Innovation Hub, Bangalore<br />
                     Karnataka, India 560001
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
